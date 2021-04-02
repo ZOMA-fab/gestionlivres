@@ -12,7 +12,7 @@ Route::get("livre/enregistrer",      [MainController::class, "enregistrerLivre"]
 
 Route::get('livre/liste',            [MainController::class, 'getList'])->name('livre.liste');
 
-Route::get('afficher/livre/{livre}', [MainController::class, 'editLivre'])->name('ph');
+Route::get('afficher/livre/{livre}', [MainController::class, 'editLivre'])->name('livre.afficher');
 
 Route::post('modifier/{id}',         [MainController::class, 'updateLivre'])->name('livre.modifier');
 
