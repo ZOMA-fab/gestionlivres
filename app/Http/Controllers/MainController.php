@@ -44,8 +44,7 @@ class MainController extends Controller
             "prix" => $request->prix,
             "quantite" => $request->quantite,
             
-            $user = User::first();
-            Mail::to($user)->send(new NouveauLivreAjoutee($produit));
+        
                  
         ]);
         return redirect()->back()->with('statut', 'Livre ajouté avec succès');
